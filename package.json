@@ -1,0 +1,35 @@
+{
+  "name": "bridge-nonprofit-website",
+  "version": "1.0.0",
+  "description": "Official website for BRIDGE - Build Resilience in Development, Growth, and Education nonprofit",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server .",
+    "format": "npx prettier --write \"**/*.{html,css,js,json,md}\"",
+    "lint:html": "npx htmlhint \"**/*.html\"",
+    "validate": "npx html-validate \"**/*.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/bridge-website.git"
+  },
+  "keywords": [
+    "nonprofit",
+    "education",
+    "financial-literacy",
+    "economics",
+    "community",
+    "student-led"
+  ],
+  "author": "BRIDGE Technical Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/bridge-website/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/bridge-website#readme",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
