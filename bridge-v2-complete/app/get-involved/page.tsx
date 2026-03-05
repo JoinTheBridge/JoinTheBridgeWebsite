@@ -80,11 +80,11 @@ export default function GetInvolvedPage() {
                 <div className={`w-16 h-16 bg-gradient-to-br ${opp.color} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg`}>
                   {opp.icon}
                 </div>
-                
+
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">
                   {opp.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {opp.description}
                 </p>
@@ -94,12 +94,15 @@ export default function GetInvolvedPage() {
                   <span>{opp.commitment}</span>
                 </div>
 
-                <motion.button
+                <motion.a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
-                  className="w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                  className="block text-center w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   Apply Now
-                </motion.button>
+                </motion.a>
               </FloatingCard>
             ))}
           </div>
@@ -196,13 +199,16 @@ export default function GetInvolvedPage() {
             <p className="text-lg mb-8 text-white/90">
               Join our community of passionate volunteers today
             </p>
-            <motion.button
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white text-primary-500 font-semibold rounded-full text-lg shadow-lg"
+              className="inline-block px-8 py-4 bg-white text-primary-500 font-semibold rounded-full text-lg shadow-lg"
             >
               Start Your Application
-            </motion.button>
+            </motion.a>
             <p className="mt-6 text-sm text-white/80">
               Questions? Email us at volunteer@bridge-nonprofit.org
             </p>

@@ -76,7 +76,7 @@ export default function ProgramsPage() {
               Our <span className="gradient-text">Programs</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Free, high-quality educational programs designed to empower students 
+              Free, high-quality educational programs designed to empower students
               with the knowledge and skills they need to succeed.
             </p>
           </motion.div>
@@ -92,11 +92,11 @@ export default function ProgramsPage() {
                 <div className={`w-16 h-16 bg-gradient-to-br ${program.color} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg`}>
                   {program.icon}
                 </div>
-                
+
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">
                   {program.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   {program.description}
                 </p>
@@ -116,12 +116,15 @@ export default function ProgramsPage() {
                   </div>
                 </div>
 
-                <motion.button
+                <motion.a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
-                  className="mt-6 w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                  className="block text-center mt-6 w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   Apply Now
-                </motion.button>
+                </motion.a>
               </FloatingCard>
             ))}
           </div>
@@ -172,13 +175,16 @@ export default function ProgramsPage() {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <motion.button
+            <motion.a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-full text-lg shadow-lg"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-full text-lg shadow-lg"
             >
               Apply to Programs
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>
