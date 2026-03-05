@@ -116,15 +116,12 @@ export default function ProgramsPage() {
                   </div>
                 </div>
 
-                <motion.a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <motion.button
                   whileHover={{ scale: 1.05 }}
-                  className="block text-center mt-6 w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                  className="mt-6 w-full px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   Apply Now
-                </motion.a>
+                </motion.button>
               </FloatingCard>
             ))}
           </div>
@@ -175,16 +172,13 @@ export default function ProgramsPage() {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <motion.a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-full text-lg shadow-lg"
+              className="px-8 py-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white font-semibold rounded-full text-lg shadow-lg"
             >
               Apply to Programs
-            </motion.a>
+            </motion.button>
           </motion.div>
         </div>
       </section>

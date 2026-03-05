@@ -3,6 +3,7 @@
 import { FloatingCard } from '@/components/antigravity/FloatingCard';
 import { motion } from 'framer-motion';
 import { Users, BookOpen, Award, TrendingUp, MapPin, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ImpactPage() {
   const stats = [
@@ -132,20 +133,34 @@ export default function ImpactPage() {
               Your support helps us reach more students and create more success stories
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
+              <motion.a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc4hDUaY8jIORLuVKd9YLC5yOU19BhFfZP-FqGCfkYWUs7QxQ/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-primary-500 font-semibold rounded-full text-lg shadow-lg"
+                className="block sm:inline-block px-8 py-4 bg-white text-primary-500 font-semibold rounded-full text-lg shadow-lg text-center"
               >
                 Volunteer
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-transparent text-white font-semibold rounded-full text-lg border-2 border-white hover:bg-white/10"
-              >
-                Donate
-              </motion.button>
+              </motion.a>
+              <Link href="/get-involved">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto px-8 py-4 bg-white text-primary-500 font-semibold rounded-full text-lg shadow-lg"
+                >
+                  Get Involved
+                </motion.button>
+              </Link>
+              <Link href="/donate">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto px-8 py-4 bg-transparent text-white font-semibold rounded-full text-lg border-2 border-white hover:bg-white/10"
+                >
+                  Donate
+                </motion.button>
+              </Link>
             </div>
           </FloatingCard>
         </div>
